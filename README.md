@@ -2,7 +2,7 @@
 
 # Prerequest
 * Install Docker  
-Debian-series  
+-- Debian-series  
 > sudo apt update  
 sudo apt install -y docker.io  
 sudo systemctl enable docker --now  
