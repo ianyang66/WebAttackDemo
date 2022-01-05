@@ -9,9 +9,9 @@ sudo systemctl enable docker --now
 sudo usermod -aG docker $USER  
 
 # Download
-> git clone 
+> git clone https://github.com/ianyang66/WebAttackDemo.git
 # Build DockerImage
-docker 
+docker build -t webattackdemo .
 ## Vulnerabilities
 
 * Reflected XSS  
