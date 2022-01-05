@@ -15,7 +15,7 @@ docker build -t webattackdemo .
 ## Vulnerabilities
 
 * Reflected XSS  
-http://localhost/pictures/search.php?query=blah  
+http://localhost/pictures/search.php?query=blahblah  
 The query parameter is vulnerable.  
 
 * Stored XSS  
