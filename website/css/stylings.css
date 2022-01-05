@@ -5,11 +5,11 @@ a
 
 #comments, #related, #same-upload{
     border: 1px solid black;
-    margin-top: 3em;
+    margin-top: 6em;
 }
 
 #title{
-    margin-left: 2px;
+    margin-left: 6px;
 }
 
 #comment-title, #related-title, #same-upload-title
