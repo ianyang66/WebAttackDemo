@@ -1,6 +1,6 @@
-## WebAttackDemo
+# WebAttackDemo
 
-# Prerequest
+## Prerequest
 * Install Docker  
 -- Debian-series  
 > sudo apt update  
@@ -8,12 +8,16 @@ sudo apt install -y docker.io
 sudo systemctl enable docker --now  
 sudo usermod -aG docker $USER  
 
-# Download
+## Download
 > git clone https://github.com/ianyang66/WebAttackDemo.git
-# Build DockerImage
-docker build -t webattackdemo .
-## Vulnerabilities
 
+## Build DockerImage
+docker build -t webattackdemo .
+
+## Run Docker Container
+> docker run -p 127.0.0.1:8080:80 -it webattackdemo
+
+## Vulnerabilities
 * Reflected XSS  
 http://localhost/pictures/search.php?query=blahblah  
 The query parameter is vulnerable.  
