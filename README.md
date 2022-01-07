@@ -19,22 +19,22 @@
 
 ## Vulnerabilities
 * Reflected XSS  
-http://localhost/pictures/search.php?query=blahblah  
+http://127.0.0.1:8080/pictures/search.php?query=blahblah  
 The query parameter is vulnerable.  
 
 * Stored XSS  
-http://localhost/guestbook.php  
+http://127.0.0.1:8080/guestbook.php  
 The comment field is vulnerable.  
 
 * SessionID vulnerability  
-http://localhost/admin/login.php  
+http://127.0.0.1:8080/admin/login.php  
 The session cookie value is admin_session, which is an auto-incrementing value.  
 
 * Stored SQL Injection  
-http://localhost/users/register.php -> http://localhost/users/similar.php  
+http://127.0.0.1:8080/users/register.php -> http://127.0.0.1:8080/users/similar.php  
 The first name field of the register users form contains a stored SQL injection which is then used unsanitized on the similar users page.  
 
 * Reflected SQL Injection  
-http://localhost/users/login.php  
+http://127.0.0.1:8080/users/login.php  
 The username field is vulnerable.  
 
