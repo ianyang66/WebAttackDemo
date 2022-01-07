@@ -4,18 +4,18 @@
 * Install Docker  
 -- Debian-series  
 > sudo apt update  
-sudo apt install -y docker.io  
-sudo systemctl enable docker --now  
-sudo usermod -aG docker $USER  
+	sudo apt install -y docker.io  
+	sudo systemctl enable docker --now  
+	sudo usermod -aG docker $USER  
 
 ## Download
-> git clone https://github.com/ianyang66/WebAttackDemo.git
+	git clone https://github.com/ianyang66/WebAttackDemo.git
 
 ## Build DockerImage
-docker build -t webattackdemo .
+	docker build -t webattackdemo .
 
 ## Run Docker Container
-> docker run -p 127.0.0.1:8080:80 -it webattackdemo
+	docker run -p 127.0.0.1:8080:80 -it webattackdemo
 
 ## Vulnerabilities
 * Reflected XSS  
